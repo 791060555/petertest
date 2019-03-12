@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $.ajax({
+                type: 'GET',
+                dataType: 'json',
+                url:"http://hzf000.natapp1.cc/getpay?money=100.00&mark=12312312&orderid=2019030910002001270208002295&type=dingding",//域名地址
+                success:function(data){
+                    //输出数据
+                    console.log(data);
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+</body>
+</script>
+</html>
